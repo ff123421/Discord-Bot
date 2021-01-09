@@ -37,7 +37,7 @@ async def on_message(message):
   message_id_1 = message.id
   @bot.event
   async def on_reaction_add(reaction, user):
-      Channel = bot.get_channel('795041467914518558')
+      Channel = bot.get_channel("some#'s")
       member = user
       if reaction.emoji == "👍":  
        @bot.event
@@ -59,7 +59,7 @@ async def on_message(message):
                msg_id = payload.message_id
                guild_id = payload.guild_id
                server = bot.get_guild(guild_id)
-               role = discord.utils.get(server.roles, id=int("795040318197596200"))
+               role = discord.utils.get(server.roles, id=int("some#'s"))
                member10 = server.get_member(user_id)
                print(member)
                await member.add_roles(role)
